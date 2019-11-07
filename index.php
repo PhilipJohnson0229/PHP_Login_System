@@ -1,3 +1,8 @@
+<?php
+define('_CONFIG_', true);
+require_once "config.php"; 
+?>
+
 <!DOCTYPE html>
 <html lang = "en">
 
@@ -14,34 +19,21 @@
 
 <body>
 <div class = "uk-section uk-container uk-text-center">
-<div class="uk grid uk child width-1-3@s uk child width-1-1">
-	<form>
-    <fieldset class="uk-fieldset js-login">
+	<?php
 
-        <legend class="uk-legend">Legend</legend>
+	echo "Hello World! today is "; 
+	echo date("y = d");
 
-        <div class="uk-margin">
-            <input class="uk-input" type="text" placeholder="Email">
-        </div>
+	?>
 
-         <div class="uk-margin">
-            <input class="uk-input" type="text" placeholder="Password">
-        </div>
-
-         <div class="uk-margin">
-            <button class="uk-button uk-button-default" type="Submit">Login</button>
-        </div>
-    </fieldset>
-	</form>
-</div>
+	<p>
+		<a href = "login.php">Login</a>
+		<a href = "register.php">Register</a>
+	</p>
 </div>
 
-<!--jquery is required-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<?php require_once "footer.php" ?>
 
-<!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
 </body>
 
 </html>
