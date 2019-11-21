@@ -1,6 +1,6 @@
 <?php
 define('_CONFIG_', true);
-require_once "config.php"; 
+require_once "Inc/config.php"; 
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +32,7 @@ require_once "config.php";
 	</p>
 </div>
 
-<?php require_once "footer.php" ?>
+<?php require_once "Inc/footer.php"; ?>
 
 </body>
 
