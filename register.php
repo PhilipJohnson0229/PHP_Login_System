@@ -1,6 +1,6 @@
 <?php
 define('_CONFIG_', true);
-require_once "config.php"; 
+require_once "Inc/config.php"; 
 ?>
 
 <!DOCTYPE html>
@@ -13,36 +13,40 @@ require_once "config.php";
 <meta name = "Robots" content = "follow"/>
 
 <title>Login System</title>
+<base href = "/"/>
 <!-- UIkit CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
 </head>
 
 <body>
 <div class = "uk-section uk-container uk-text-center">
-<div class="uk grid uk child width-1-3@s uk child width-1-1">
-	<form>
-        <h2> Register </h2>
-    <fieldset class="uk-fieldset js-register">
-
-        <legend class="uk-legend">Legend</legend>
+<div class="uk-grid uk-child-width-1-3@s uk-child-width-1-1" uk-grid>
+	<form class = "uk-form-stacked js-register">
+    <h2> Register </h2>
+            <div class="uk-margin">
+            <label class="uk-form-label" for="form-stacked-text">Email</label>
+            <div class="uk-form-controls">
+                <input class="uk-input" id="form-stacked-text" type="email" required='required' placeholder="email@email.com">
+            </div>
+        </div>
 
         <div class="uk-margin">
-            <input class="uk-input" type="text" placeholder="Email">
+            <label class="uk-form-label" for="form-stacked-text">Password</label>
+            <div class="uk-form-controls">
+                <input class="uk-input" id="form-stacked-text" type="password" required='required' placeholder="Password">
+            </div>
         </div>
 
-         <div class="uk-margin">
-            <input class="uk-input" type="text" placeholder="Password">
-        </div>
+        <div class="uk-margin uk-alert uk-alert-danger js-error" style = 'display: none;'></div>
 
-         <div class="uk-margin">
+        <div class="uk-margin">
             <button class="uk-button uk-button-default" type="Submit">Register</button>
         </div>
-    </fieldset>
 	</form>
 </div>
 </div>
 
-<?php require_once "footer.php" ?>
+<?php require_once "Inc/footer.php" ?>
 
 </body>
 
