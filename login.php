@@ -21,7 +21,7 @@ require_once "Inc/config.php";
 <div class = "uk-section uk-container uk-text-center">
 <div class="uk grid uk child width-1-3@s uk child width-1-1">
 	<form class = "uk-form-stacked js-login">
-    <h2> Register </h2>
+    <h2> Login </h2>
             <div class="uk-margin">
             <label class="uk-form-label" for="form-stacked-text">Email</label>
             <div class="uk-form-controls">

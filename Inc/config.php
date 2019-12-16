@@ -5,6 +5,12 @@ if(!defined('_CONFIG_'))
 	exit('you do not have a config file set up');
 }
 
+//this is will turn sessions on so we can accept them.  
+if(!isset($_SESSION))
+{
+	session_start();
+}
+
 error_reporting(-1);
 ini_set('display_errors', 'On');
 
