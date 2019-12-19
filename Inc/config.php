@@ -16,6 +16,7 @@ ini_set('display_errors', 'On');
 
 include_once("CLasses/DB.php");
 include_once("CLasses/Filter.php");
+include_once("Functions.php");
 
 $con = DB::getConnection();
 ?>
